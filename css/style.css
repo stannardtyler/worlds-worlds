@@ -1,0 +1,179 @@
+/*
+Color palette
+$gold: #967B13ff;
+$cinereous: #937870ff;
+$taupe-gray: #94898Fff;
+$y-in-mn-blue: #394F76ff;
+$dark blue: #07101f;
+$manatee: #9EA2B3ff;
+$shadow-blue: #7D8CADff; */
+
+/* Starry Night sky css bg by - https://youtu.be/0t6Dmp70kTw */
+
+
+html, body {
+  background-color: white;
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding-top: 50px;
+  display:block;
+  position: relative;
+  z-index: 3;
+}
+
+table, th, td {
+  /* border:1px solid black; */
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #07101f;
+}
+
+.topnav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav a {
+  float: left;
+  position: relative;
+  left: 45%;
+  top: 50%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav li a:hover {
+  background-color: #394F76ff;
+  color: white;
+}
+
+.topnav li a.active {
+  background-color: blue;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  display: flex;
+  background-color: white;
+  padding: 2px;
+}
+
+.column {
+  flex: 50%;
+  background-color: black;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+
+  display:block;
+  position: relative;
+  z-index: 3;
+}
+
+.container a{
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  background-color: white;
+}
+
+.container a:hover{
+  color: white;
+  background-color: black;
+}
+.container h1, h2, h3 {
+  text-align: center;
+  color: white;
+}
+
+.container p {
+  color: #ebebeb;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:275%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(/images/twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+  background:transparent url(/images/clouds.png) repeat top center;
+  z-index:2;
+  opacity: .4;
+  animation:move-clouds-back 200s linear infinite;
+}
