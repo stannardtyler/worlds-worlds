@@ -161,18 +161,18 @@ a:active {
 }
 
 .stars {
-  background:#000 url(/images/stars.png) repeat top center;
+  background:#000 url(images/stars.png) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(/images/twinkling.png) repeat top center;
+  background:transparent url(images/twinkling.png) repeat top center;
   z-index:1;
   animation:move-twink-back 200s linear infinite;
 }
 
 .clouds{
-  background:transparent url(/images/clouds.png) repeat top center;
+  background:transparent url(images/clouds.png) repeat top center;
   z-index:2;
   opacity: .4;
   animation:move-clouds-back 200s linear infinite;
