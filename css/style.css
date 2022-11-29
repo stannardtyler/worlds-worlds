@@ -161,7 +161,7 @@ a:active {
 }
 
 .stars {
-  background:#000 url(../images/stars.png) repeat top center;
+  background:#000 url(../images/stars_big.png) repeat top center;
   z-index:0;
 }
 
